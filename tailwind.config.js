@@ -18,6 +18,7 @@ module.exports = {
         'gray-900': '#141414',
         'gray-800': '#4D4D4D',
         'gray-700': '#252425',
+        'gray-600': '#BFBFBF',
       },
       gridTemplateColumns: {
         '3-fixed': 'repeat(3, 384px)',

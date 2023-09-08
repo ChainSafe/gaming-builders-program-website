@@ -18,10 +18,33 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
+}
+
+@layer components {
+  .h1-dark {
+    color: theme(colors.black);
+    @apply text-7xl font-bold tracking-tight;
+  }
+  .h1-light {
+    color: theme(colors.white);
+    @apply text-7xl font-bold tracking-tight;
+  }
+  .h4-light {
+    color: theme(colors.gray.300);
+    @apply text-2xl py-5;
+  }
+  .h4-dark {
+    color: theme(colors.black);
+    @apply text-2xl py-5;
+  }
+}
+
+@layer utilities {
+  .mobile-header-dark {
+    @apply text-5xl text-gray-700 font-bold tracking-tight;
+  }
+  .mobile-header-light {
+    @apply text-5xl text-white font-bold tracking-tight;
+  }
 }
