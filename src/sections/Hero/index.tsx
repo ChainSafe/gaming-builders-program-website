@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@/components/Button/ExternalButton';
-import { formUrl } from '../../../constants';
+import { formUrl } from '../../data/constants';
 
 export default function Hero() {
   return (

@@ -6,6 +6,7 @@ import Why from '@/sections/Why';
 import Offer from '@/sections/Offer';
 import WhatWeLookFor from '@/sections/WhatWeLookFor';
 import CTA from '@/sections/CTA';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -71,6 +72,7 @@ export default function Home() {
       <Offer />
       <WhatWeLookFor />
       <CTA />
+      <Footer />
     </>
   );
 }
