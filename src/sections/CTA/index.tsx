@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@/components/Button/ExternalButton';
+import { formUrl } from '../../../constants';
 
 export default function CTA() {
   return (
@@ -9,7 +10,7 @@ export default function CTA() {
           Apply to join the Builders Program.
         </h2>
         <div className='mt-8'>
-        <Button href='#' type='primary'>
+        <Button href={formUrl} type='primary'>
           Submit Application
         </Button>
         </div>

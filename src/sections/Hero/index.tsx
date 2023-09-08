@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@/components/Button/ExternalButton';
+import { formUrl } from '../../../constants';
 
 export default function Hero() {
   return (
@@ -13,7 +14,7 @@ export default function Hero() {
           support to developers interested in building creative projects with
           ChainSafe Gaming.
         </p>
-        <Button href='#' type='primary'>
+        <Button href={formUrl} type='primary'>
           Submit Application
         </Button>
       </div>
