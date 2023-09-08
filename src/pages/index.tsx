@@ -7,6 +7,7 @@ import Offer from '@/sections/Offer';
 import WhatWeLookFor from '@/sections/WhatWeLookFor';
 import CTA from '@/sections/CTA';
 import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (
@@ -66,6 +67,7 @@ export default function Home() {
           data-domain='marketplace.chainsafe.io'
           src='https://plausible.io/js/script.outbound-links.js'></script>
       </Head>
+      <Navbar />
       <Hero />
       <WhoShouldApply />
       <Why />

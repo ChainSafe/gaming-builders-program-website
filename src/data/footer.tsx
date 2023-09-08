@@ -11,7 +11,7 @@ export const navigation = {
     { name: 'Brand Assets', href: 'https://gaming.chainsafe.io/wp-content/uploads/2023/04/csg-brand-assets.zip' },
   ],
   reach: [
-    {name: 'Contact BD', href:'mailto:bd@chainsafe.io'}
+    {name: 'Contact Sales', href:'mailto:bd@chainsafe.io'}
   ],
   social: [
     {
