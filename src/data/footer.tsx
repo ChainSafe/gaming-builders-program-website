@@ -29,7 +29,7 @@ export const navigation = {
     },
     {
       name: 'Discord',
-      href: 'http://discord.gg/n2U6x9c',
+      href: 'https://discord.com/invite/n2U6x9c',
       icon: (props:any) => (
      <svg
           role="img"

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { parentVariant, childVariants } from "@/styles/animations";
 const candidateCriteria = [
   {
     index: '01',
@@ -23,26 +25,35 @@ export default function WhoShouldApply() {
         </p>
       <div className='grid grid-cols-1 content-end gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2'>
         <div className='lg:max-w-lg'>
-          <dl className='mt-10 max-w-xl space-y-8 text-base leading-7  lg:max-w-none'>
+          <motion.dl initial='offscreen'
+          whileInView='onscreen'
+          variants={parentVariant}
+          viewport={{ amount: 0.5 }} className='mt-10 max-w-xl space-y-8 text-base leading-7  lg:max-w-none'>
             {candidateCriteria.map((feature) => (
-              <div
+              <motion.div
+                variants={childVariants}
                 key={feature.desc}
                 className='relative px-4 mx-auto md:pl-9 flex-row flex border-b border-gray-600 py-8'>
                 <dt className='min-w-[2rem] inline text-xl font-medium text-gray-600 mr-8'>
                   {feature.index}
                 </dt>{' '}
                 <dd className='text-xl text-black'>{feature.desc}</dd>
-              </div>
+              </motion.div>
             ))}
-          </dl>
-        </div>
-        <img
-          src='/apply.png'
-          alt='Product screenshot'
-          className='lg:w-[48rem] lg:max-w-none hidden md:inline lg:-ml-0 md:w-full mt-12'
-          width={2432}
-          height={1442}
-        />
+          </motion.dl>
+          </div>
+          <div className='relative'>
+            <img src="/bg/square1.png" className='hidden md:inline z-0 absolute right-11 top-4'alt="background"/>
+            <img src="/bg/square2.png" className='hidden md:inline z-0 absolute left-[-2rem] top-[80%]'alt="background"/>
+            <img src="/bg/square3.png" className='hidden md:inline z-0 absolute right-8 top-[105%]'alt="background"/>
+          <img
+            src='/apply.png'
+            alt='Product screenshot'
+            className='relative z-10 lg:w-[48rem] lg:max-w-none hidden md:inline lg:-ml-0 md:w-full mt-12'
+            width={2432}
+            height={1442}
+           />
+          </div>
       </div>
       </div>
     </div>

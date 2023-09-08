@@ -45,7 +45,7 @@ export default function Navbar() {
           
           />
           {navbarSimpleLinks.map((link) => (
-            <Link href={link.href} className='text-md inline-flex items-center gap-x-1 rounded-full px-4 py-2 leading-6 text-gray-300 ring-0 hover:text-opacity-75 focus:outline-none focus-visible:ring-gray-900 focus-visible:ring-opacity-75'>
+            <Link href={link.href} className='text-md inline-flex items-center gap-x-1 rounded-full px-4 py-2 leading-6 text-gray-300 ring-0 hover:text-brand-400 focus:outline-none focus-visible:ring-gray-900 focus-visible:ring-opacity-75'>
               {link.name}
             </Link>
           ))}

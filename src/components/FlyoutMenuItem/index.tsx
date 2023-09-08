@@ -91,7 +91,7 @@ export default function FlyoutMenuItem({
                       key={item.name}
                       className="group relative flex gap-x-6 rounded-2xl p-4 hover:bg-gray-800"
                     >
-                      <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-800 group-hover:bg-gray-700">
+                      <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-900 group-hover:bg-gray-800">
                         <item.icon
                           className="h-6 w-6 text-gray-400 group-hover:text-brand-400"
                           aria-hidden="true"
@@ -100,7 +100,7 @@ export default function FlyoutMenuItem({
                       <div>
                         <a
                           href={item.href}
-                          className="font-semibold text-gray-300"
+                          className="font-semibold text-gray-100"
                         >
                           {item.name}
                           <span className="absolute inset-0" />

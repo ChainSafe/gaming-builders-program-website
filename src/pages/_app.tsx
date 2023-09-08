@@ -1,3 +1,4 @@
+import RootLayout from '@/components/Layout';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import localFont from 'next/font/local';
@@ -21,7 +22,9 @@ const neueMontreal = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={neueMontreal.className}>
-      <Component {...pageProps} />
+      <RootLayout>
+        <Component {...pageProps} />
+      </RootLayout>
     </main>
   );
 }

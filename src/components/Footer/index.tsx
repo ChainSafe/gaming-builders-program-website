@@ -33,7 +33,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.product.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-lg leading-6 text-gray-400 hover:text-white">
+                      <a href={item.href} className="text-lg leading-6 text-gray-400 hover:text-brand-400">
                         {item.name}
                       </a>
                     </li>
@@ -45,7 +45,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-lg leading-6 text-gray-400 hover:text-white">
+                      <a href={item.href} className="text-lg leading-6 text-gray-400 hover:text-brand-400">
                         {item.name}
                       </a>
                     </li>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.reach.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-lg leading-6 text-gray-400 hover:text-white">
+                      <a href={item.href} className="text-lg leading-6 text-gray-400 hover:text-brand-400">
                         {item.name}
                       </a>
                     </li>

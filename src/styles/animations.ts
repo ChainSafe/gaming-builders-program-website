@@ -3,27 +3,15 @@ import { Variants } from "framer-motion";
 export const fadeInVariant: Variants = {
   offscreen: {
     opacity: 0,
-    y: 20
   },
   onscreen: {
     opacity: 1,
-    y: -20,
     transition: {
-      duration: 0.5,
+      duration: 1.1,
+      delay: 0.15,
     },
   },
 };
-
-export const stickyVariant: Variants = {
-  offscreen: {
-    top: 0,
-    position: 'static',
-  }, 
-  onscreen: {
-    top: 0,
-    position: 'sticky',
-  }
-}
 
 export const parentVariant:Variants = {
   offscreen: {
