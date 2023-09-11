@@ -1,5 +1,6 @@
 import { navigation } from "@/data/footer"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -22,10 +23,10 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="hover:brightness-75">
+                <Link key={item.name} href={item.href} className="hover:brightness-75">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-7 w-7 " aria-hidden="true" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -36,9 +37,9 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.product.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-lg leading-6 text-gray-400 hover:text-brand-400">
+                      <Link href={item.href} className="text-lg leading-6 text-gray-400 hover:text-brand-400">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -48,9 +49,9 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-lg leading-6 text-gray-400 hover:text-brand-400">
+                      <Link href={item.href} className="text-lg leading-6 text-gray-400 hover:text-brand-400">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
