@@ -13,8 +13,8 @@ jobs:
             with:
               cache: yarn
               node-version: '16'
-          - run: yarn install --frozen-lockfile
-          - run: yarn run build
+          - run: npm install --frozen-lockfile
+          - run: npm run build
           - name: Publish to Cloudflare Pages
             uses: cloudflare/pages-action@1
             with:
