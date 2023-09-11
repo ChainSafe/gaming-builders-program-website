@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { parentVariant, childVariants } from "@/styles/animations";
+import Image from "next/image";
 const candidateCriteria = [
   {
     index: '01',
@@ -19,7 +20,7 @@ export default function WhoShouldApply() {
         <h1 className='mobile-header-dark lg:h1-dark'>
           Who should apply?
         </h1>
-        <p className='h4-dark max-w-3xl'>
+        <p className='h4-ndark max-w-3xl'>
           ChainSafe Gaming backs top teams with strong web3 gaming expertise and
           a clear vision for utilizing CSG products in their projects.
         </p>
@@ -43,12 +44,12 @@ export default function WhoShouldApply() {
           </motion.dl>
           </div>
           <div className='relative'>
-            <img src="/bg/square1.png" className='hidden md:inline z-0 absolute right-11 top-4'alt="background"/>
-            <img src="/bg/square2.png" className='hidden md:inline z-0 absolute left-[-2rem] top-[80%]'alt="background"/>
-            <img src="/bg/square3.png" className='hidden md:inline z-0 absolute right-8 top-[105%]'alt="background"/>
-          <img
+            <Image src="/bg/square1.png" className='hidden md:inline z-0 absolute right-11 top-4' alt="background" height={80} width={100}/>
+            <Image src="/bg/square2.png" className='hidden md:inline z-0 absolute left-[-2rem] top-[80%]' alt="background" height={80} width={100}/>
+            <Image src="/bg/square3.png" className='hidden md:inline z-0 absolute right-8 top-[105%]' alt="background" height={80} width={100}/>
+          <Image
             src='/apply.png'
-            alt='Product screenshot'
+            alt='ChainSafe Gaming dashboard showcasing SDK functionality to retrieve token data.'
             className='relative z-10 lg:w-[48rem] lg:max-w-none hidden md:inline lg:-ml-0 md:w-full mt-12'
             width={2432}
             height={1442}

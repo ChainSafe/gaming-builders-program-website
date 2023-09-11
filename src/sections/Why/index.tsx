@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 
 export default function Why() {
@@ -6,9 +7,9 @@ export default function Why() {
       <div className='mx-auto max-w-7xl px-4 lg:px-0'>
         <div className='grid grid-cols-1 items-end md:gap-x-8 lg:gap-x-16 gap-y-16 sm:gap-y-20 md:grid-cols-2 '>
 
-          <img
+          <Image
             src='/dashboard.png'
-            alt='Product screenshot'
+            alt='ChainSafe Gaming dashboard displaying analytics and insights for game developers.'
             className='lg:w-[40rem] relative z-2 lg:max-w-none md:inline lg:ml-0 md:w-full lg:mt-12'
             width={2432}
             height={1442}

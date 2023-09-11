@@ -2,6 +2,7 @@ import { Fragment, useRef, useState, useEffect } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { CaretDown } from "@phosphor-icons/react";
 import { MenuOption, CTA } from "@/data/navbar";
+import Link from "next/link";
 
 type FlyoutMenuItemProps = {
   name: string;
@@ -98,13 +99,13 @@ export default function FlyoutMenuItem({
                         />
                       </div>
                       <div>
-                        <a
+                        <Link
                           href={item.href}
                           className="font-semibold text-gray-100"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
-                        </a>
+                        </Link>
                         <p className="mt-0 text-gray-300">{item.description}</p>
                       </div>
                     </div>
@@ -113,7 +114,7 @@ export default function FlyoutMenuItem({
                 <div className="bg-gray-700">
                   {callsToAction &&
                     callsToAction.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className="text-md flex items-center justify-center gap-x-2.5 p-3  text-brand-400 hover:text-opacity-75"
@@ -123,7 +124,7 @@ export default function FlyoutMenuItem({
                           aria-hidden="true"
                         />
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                 </div>
               </div>
