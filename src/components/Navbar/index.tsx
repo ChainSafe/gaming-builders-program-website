@@ -10,6 +10,7 @@ import {
   resourcesOptions,
 } from "@/data/navbar";
 import Button from '../Button/ExternalButton';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ export default function Navbar() {
         aria-label="Global"
       >
         <Link href="/" className="flex lg:flex-1">
-         <img className='h-12' src="/logo.png" alt="ChainSafe Gaming" />
+          <Image className='h-12' height={48} width={48}  src="/logo.png" alt="ChainSafe Gaming" />
         </Link>
         <div className="flex lg:hidden">
           <button
@@ -45,7 +46,7 @@ export default function Navbar() {
           
           />
           {navbarSimpleLinks.map((link) => (
-            <Link href={link.href} className='text-md inline-flex items-center gap-x-1 rounded-full px-4 py-2 leading-6 text-gray-300 ring-0 hover:text-brand-400 focus:outline-none focus-visible:ring-gray-900 focus-visible:ring-opacity-75'>
+            <Link key={link.name}  href={link.href} className='text-md inline-flex items-center gap-x-1 rounded-full px-4 py-2 leading-6 text-gray-300 ring-0 hover:text-brand-400 focus:outline-none focus-visible:ring-gray-900 focus-visible:ring-opacity-75'>
               {link.name}
             </Link>
           ))}
@@ -64,10 +65,9 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Sygma</span>
-              <img className="h-12 w-auto" src="/logo.png" alt="" />
-            </a>
+            <Link href="/" className="-m-1.5 p-1.5">
+              <Image className="h-12 w-auto" src="/logo.png" alt="" />
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-primary-200"
@@ -80,7 +80,7 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="divide-y divide-gray-500/10">
               <div className='flex flex-col'>               {navbarSimpleLinks.map((link) => (
-            <Link href={link.href} className='text-md inline-flex items-center gap-x-1 rounded-full px-4 py-6 leading-6 text-gray-300 ring-0 hover:text-opacity-75 focus:outline-none focus-visible:ring-gray-900 focus-visible:ring-opacity-75'>
+                <Link key={link.name}  href={link.href} className='text-md inline-flex items-center gap-x-1 rounded-full px-4 py-6 leading-6 text-gray-300 ring-0 hover:text-opacity-75 focus:outline-none focus-visible:ring-gray-900 focus-visible:ring-opacity-75'>
               {link.name}
             </Link>
               ))}

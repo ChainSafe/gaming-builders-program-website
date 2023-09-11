@@ -1,4 +1,5 @@
 import { navigation } from "@/data/footer"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -9,10 +10,12 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <img
+            <Image
               className="h-16"
               src="/logo.png"
               alt="ChainSafe Gaming"
+              width={64}
+              height={64}
             />
             <p className="text-lg leading-6 text-gray-400">
              A better way to build blockchain games.

@@ -7,13 +7,12 @@ const RootLayout = ({ children }:any) => {
   return (
     <div>
       <Head>
-        <title>ChainSafe Gaming Marketplace</title>
-        {/* create marketplace plausible script */}
+        <title>Builders Program - ChainSafe Gaming</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta
           name='description'
-          content="Create a player-centric in-game marketplace with ChainSafe's Marketplace. Own & control your ecosystem, enabling seamless access to assets during gameplay."
+          content="Build your next web3 game with ChainSafe Gaming SDK through our Builders Program. Get funding, guidance, and support. Apply to join waitlist."
         />
         {/*<!-- OG Meta Tags -->*/}
         <meta
@@ -58,8 +57,9 @@ const RootLayout = ({ children }:any) => {
         />
         <script
           defer
-          data-domain='marketplace.chainsafe.io'
+          data-domain='builders.gaming.chainsafe.io'
           src='https://plausible.io/js/script.outbound-links.js'></script>
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7667626.js"></script>
       </Head>
       <Navbar />
       <main>{children}</main>
