@@ -21,7 +21,7 @@ export default function Navbar() {
         aria-label="Global"
       >
         <Link href="/" className="flex lg:flex-1">
-          <Image className='h-12' height={48} width={48}  src="/logo.png" alt="ChainSafe Gaming" />
+          <Image className='w-auto max-h-24' height={32} width={48}  src="/logo.png" alt="ChainSafe Gaming" />
         </Link>
         <div className="flex lg:hidden">
           <button
@@ -66,7 +66,7 @@ export default function Navbar() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
-              <Image className="h-12 w-auto" src="/logo.png" alt="" />
+              <Image className="w-auto" src="/logo.png" alt="ChainSafe Gaming web3.unity" height={64} width={100} />
             </Link>
             <button
               type="button"
