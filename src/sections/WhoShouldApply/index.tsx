@@ -20,7 +20,7 @@ export default function WhoShouldApply() {
         <h1 className='mobile-header-dark lg:h1-dark'>
           Who should apply?
         </h1>
-        <p className='h4-ndark max-w-3xl'>
+        <p className='h4-dark max-w-3xl'>
           ChainSafe Gaming backs top teams with strong web3 gaming expertise and
           a clear vision for utilizing CSG products in their projects.
         </p>
