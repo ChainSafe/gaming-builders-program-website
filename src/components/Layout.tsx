@@ -7,7 +7,7 @@ const RootLayout = ({ children }:any) => {
   return (
     <div>
       <Head>
-        <title>Builders' Program - ChainSafe Gaming</title>
+        <title>Builder&apos;s Program - ChainSafe Gaming</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta
