@@ -37,7 +37,7 @@ const RootLayout = ({ children }:any) => {
         />
         <meta
           property='og:description'
-          content="Create a player-centric marketplace with ChainSafe's Marketplace. Own & control your ecosystem, enabling seamless access to assets during gameplay."
+          content="Build your next web3 game with ChainSafe Gaming SDK through our Builders Program. Get funding, guidance, and support. Apply to join waitlist."
           key='ogdesc'
         />
         {/*<!-- Twitter Meta Tags -->*/}
@@ -49,7 +49,7 @@ const RootLayout = ({ children }:any) => {
         />
         <meta
           name='twitter:description'
-          content="Create a player-centric marketplace with ChainSafe's Marketplace. Own & control your ecosystem, enabling seamless access to assets during gameplay."
+          content="Build your next web3 game with ChainSafe Gaming SDK through our Builders Program. Get funding, guidance, and support. Apply to join waitlist."
         />
         <meta
           name='twitter:image'
