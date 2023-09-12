@@ -1,4 +1,4 @@
-name: CloudFlare Deploy
+name: Game Builders Site
 on: [push]
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
             uses: cloudflare/pages-action@1
             with:
               apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-              accountId: 2238a825c5aca59233eab1f221f7aefb
+              accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
               projectName: game-builders-program
               directory: ./out
               gitHubToken: ${{ secrets.GITHUB_TOKEN }}
