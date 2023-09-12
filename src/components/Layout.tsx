@@ -7,7 +7,7 @@ const RootLayout = ({ children }:any) => {
   return (
     <div>
       <Head>
-        <title>Builders Program - ChainSafe Gaming</title>
+        <title>Builders' Program - ChainSafe Gaming</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta
@@ -22,7 +22,7 @@ const RootLayout = ({ children }:any) => {
         />
         <meta
           property='og:image'
-          content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/73764230-eea4-4d79-71a7-721a06a87e00/public'
+          content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/d54df2fc-0b20-4f10-29f1-a95d424f9a00/public'
           key='ogimage'
         />
         <meta
@@ -53,12 +53,12 @@ const RootLayout = ({ children }:any) => {
         />
         <meta
           name='twitter:image'
-          content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/73764230-eea4-4d79-71a7-721a06a87e00/public'
+          content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/d54df2fc-0b20-4f10-29f1-a95d424f9a00/public'
         />
-        <script
+        {/* <script
           defer
           data-domain='builders.gaming.chainsafe.io'
-          src='https://plausible.io/js/script.outbound-links.js'></script>
+          src='https://plausible.io/js/script.outbound-links.js'></script> */}
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7667626.js"></script>
       </Head>
       <Navbar />
