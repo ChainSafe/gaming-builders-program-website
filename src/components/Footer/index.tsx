@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <Image
-              className="h-16"
+              className="w-auto"
               src="/logo.png"
               alt="ChainSafe Gaming"
               width={64}

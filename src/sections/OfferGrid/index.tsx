@@ -9,7 +9,7 @@ const cardData = [
   {
     icon: <CurrencyCircleDollar color="#B4FF68" size={27}/>,
     title: 'Funding',
-    desc: 'Up to $10,000 CAD paid out at agreed-upon intervals dictated by the Builder Agreement.',
+    desc: 'Up to $40,000 CAD paid out at agreed-upon intervals dictated by the Builder Agreement.',
   },
   {
     icon: <FlowArrow  color="#B4FF68" size={27}/>,
@@ -23,7 +23,7 @@ const cardData = [
   },
 ]
 
-export default function Offer() {
+export default function OfferGrid() {
   return (<div className='overflow-hidden py-24 bg-black sm:py-20'>
     <div className='mx-auto max-w-7xl px-4'>
       <h1 className='mobile-header-light lg:h1-light'>

@@ -27,12 +27,12 @@ const RootLayout = ({ children }:any) => {
         />
         <meta
           property='og:site_name'
-          content='ChainSafe Gaming Marketplace'
+          content='ChainSafe Gaming Builders Program'
           key='ogsitename'
         />
         <meta
           property='og:title'
-          content='Gaming-focussed NFT marketplace | ChainSafe Gaming'
+          content='Builder&apos;s Program - ChainSafe Gaming'
           key='ogtitle'
         />
         <meta
@@ -45,7 +45,7 @@ const RootLayout = ({ children }:any) => {
         <meta name='twitter:site' content='@ChainSafeth' />
         <meta
           name='twitter:title'
-          content='Gaming-focussed NFT marketplace | ChainSafe Gaming'
+          content='Builder&apos;s Program - ChainSafe Gaming'
         />
         <meta
           name='twitter:description'
