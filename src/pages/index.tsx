@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <WhoShouldApply />
-      <Why />
       <Offer />
+      <Why />
+      <WhoShouldApply />
       <WhatWeLookFor />
       <Testimonials />
       <CTA />

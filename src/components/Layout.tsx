@@ -12,7 +12,7 @@ const RootLayout = ({ children }:any) => {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta
           name='description'
-          content="Build your next web3 game with ChainSafe Gaming SDK through our Builders Program. Get funding, guidance, and support. Apply to join waitlist."
+          content="Build your next web3 game with ChainSafe Gaming SDK through our Builder's Program. Get funding, guidance, and support. Apply to join waitlist."
         />
         {/*<!-- OG Meta Tags -->*/}
         <meta
@@ -32,12 +32,12 @@ const RootLayout = ({ children }:any) => {
         />
         <meta
           property='og:title'
-          content='Builder&apos;s Program - ChainSafe Gaming'
+          content="Builder's Program - ChainSafe Gaming"
           key='ogtitle'
         />
         <meta
           property='og:description'
-          content="Build your next web3 game with ChainSafe Gaming SDK through our Builders Program. Get funding, guidance, and support. Apply to join waitlist."
+          content='Build your next web3 game with ChainSafe Gaming SDK through our Builders Program. Get funding, guidance, and support. Apply to join waitlist.'
           key='ogdesc'
         />
         {/*<!-- Twitter Meta Tags -->*/}
@@ -45,11 +45,11 @@ const RootLayout = ({ children }:any) => {
         <meta name='twitter:site' content='@ChainSafeth' />
         <meta
           name='twitter:title'
-          content='Builder&apos;s Program - ChainSafe Gaming'
+          content="Builder's Program - ChainSafe Gaming"
         />
         <meta
           name='twitter:description'
-          content="Build your next web3 game with ChainSafe Gaming SDK through our Builders Program. Get funding, guidance, and support. Apply to join waitlist."
+          content="Build your next web3 game with ChainSafe Gaming SDK through our Builder's Program. Get funding, guidance, and support. Apply to join waitlist."
         />
         <meta
           name='twitter:image'
@@ -59,11 +59,16 @@ const RootLayout = ({ children }:any) => {
           defer
           data-domain='builders.gaming.chainsafe.io'
           src='https://plausible.io/js/script.outbound-links.js'></script> */}
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7667626.js"></script>
+        <script
+          type='text/javascript'
+          id='hs-script-loader'
+          async
+          defer
+          src='//js.hs-scripts.com/7667626.js'></script>
       </Head>
       <Navbar />
       <main>{children}</main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
