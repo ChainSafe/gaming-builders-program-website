@@ -6,6 +6,7 @@ import WhatWeLookFor from '@/sections/WhatWeLookFor';
 import CTA from '@/sections/CTA';
 import Testimonials from '@/sections/Testimonials';
 import Offer from '@/sections/Offer';
+import FAQ from '@/sections/FAQ';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Why />
       <WhoShouldApply />
       <WhatWeLookFor />
+      <FAQ />
       <Testimonials />
       <CTA />
     </>
