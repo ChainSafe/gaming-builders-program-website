@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 import { parentVariant, childVariants } from "@/styles/animations";
-import Image from "next/image";
 const candidateCriteria = [
   {
     index: '01',
@@ -44,15 +44,14 @@ export default function WhoShouldApply() {
           </motion.dl>
           </div>
           <div className='relative'>
-            <Image src="/bg/square1.png" className='hidden md:inline z-0 absolute right-11 top-4' alt="background" height={80} width={100}/>
-            <Image src="/bg/square2.png" className='hidden md:inline z-0 absolute left-[-2rem] top-[80%]' alt="background" height={80} width={100}/>
-            <Image src="/bg/square3.png" className='hidden md:inline z-0 absolute right-8 top-[105%]' alt="background" height={80} width={100}/>
-          <Image
+            <img src="/bg/square1.png" className='hidden md:inline z-0 absolute right-11 top-4' alt="background"/>
+            <img src="/bg/square2.png" className='hidden md:inline z-0 absolute left-[-2rem] top-[80%]' alt="background"/>
+            <img src="/bg/square3.png" className='hidden md:inline z-0 absolute right-8 top-[105%]' alt="background"/>
+          <img
             src='/apply.png'
             alt='ChainSafe Gaming dashboard showcasing SDK functionality to retrieve token data.'
             className='relative z-10 lg:w-[48rem] lg:max-w-none hidden md:inline lg:-ml-0 md:w-full mt-12'
-            width={2432}
-            height={1442}
+            
            />
           </div>
       </div>

@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { navigation } from "@/data/footer"
-import Image from "next/image"
 import Link from "next/link"
 
 export default function Footer() {
@@ -11,12 +11,10 @@ export default function Footer() {
       <div className='mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32'>
         <div className='xl:grid xl:grid-cols-3 xl:gap-8'>
           <div className='space-y-8'>
-            <Image
-              className='w-[150px] lg:w-auto'
+            <img
+              className='w-[150px]'
               src='/logo.png'
               alt='ChainSafe Gaming'
-              width={64}
-              height={64}
             />
             <p className='text-lg leading-6 text-gray-400'>
               A better way to build blockchain games.

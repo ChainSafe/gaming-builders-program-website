@@ -53,7 +53,7 @@ export default function Navbar() {
           ))}
         
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end"><Button type="frosted" href="bd@chainsafe.io">Contact</Button></div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end"><Button type="frosted" href="mailto:bd@chainsafe.io">Contact</Button></div>
       </nav>
 
 
@@ -80,7 +80,8 @@ export default function Navbar() {
           </div>
           <div className="mt-6 flow-root">
             <div className="divide-y divide-gray-500/10">
-              <div className='flex flex-col'>               {navbarSimpleLinks.map((link) => (
+              <div className='flex flex-col'>
+                {navbarSimpleLinks.map((link) => (
                 <Link key={link.name}  href={link.href} className='text-md inline-flex items-center gap-x-1 rounded-full px-4 py-6 leading-6 text-gray-300 ring-0 hover:text-opacity-75 focus:outline-none focus-visible:ring-gray-900 focus-visible:ring-opacity-75'>
               {link.name}
             </Link>

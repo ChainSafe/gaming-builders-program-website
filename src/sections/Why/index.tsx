@@ -1,17 +1,14 @@
-import Image from "next/image";
-
+/* eslint-disable @next/next/no-img-element */
 
 export default function Why() {
   return (
     <div className='overflow-hidden py-24 bg-black sm:py-20'>
       <div className='mx-auto max-w-7xl px-4 lg:px-0'>
         <div className='grid grid-cols-1 items-center md:gap-x-8 lg:gap-x-16 gap-y-16 sm:gap-y-20 md:grid-cols-2 '>
-          <Image
+          <img
             src='/dashboard.png'
             alt='ChainSafe Gaming dashboard displaying analytics and insights for game developers.'
             className='lg:w-[40rem] relative z-2 lg:max-w-none md:inline lg:ml-0 md:w-full lg:mt-12'
-            width={2432}
-            height={1442}
           />
           <div className='lg:max-w-lg'>
             <h1 className='mobile-header-light lg:h1-light tracking-normal'>

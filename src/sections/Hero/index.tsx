@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Button from '@/components/Button/ExternalButton';
 import { formUrl } from '../../data/constants';
 import { motion } from "framer-motion";
 import { fadeInVariant } from "@/styles/animations";
-import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -30,12 +30,10 @@ export default function Hero() {
             Submit Application
           </Button>
         </div>
-        <Image
+        <img
           src='/home.png'
           className='hidden absolute right-0 lg:inline-block bottom-0 z-0 w-10/12'
-          width={1400}
-          height={600}
-          alt=''
+          alt='ChainSafe Gaming Builders Program'
         />
       </motion.div>
     </div>
