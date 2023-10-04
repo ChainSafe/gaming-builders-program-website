@@ -2,6 +2,7 @@
 import React from 'react';
 import Button from '@/components/Button/ExternalButton';
 import { formUrl } from '../../data/constants';
+
 import { motion } from "framer-motion";
 import { fadeInVariant } from "@/styles/animations";
 
@@ -12,7 +13,7 @@ export default function Hero() {
         initial='offscreen'
         whileInView='onscreen'
         viewport={{ amount: 0.4 }}
-        className='relative flex flex-col justify-center z-4 px-4 py-40 lg:px-32 lg:py-48'>
+        className='relative flex flex-col justify-center z-10 px-4 py-40 lg:px-32 lg:py-48'>
         <motion.h2
           variants={fadeInVariant}
           className='max-w-4xl z-4 mobile-header-light lg:h1-light'>
@@ -25,7 +26,7 @@ export default function Hero() {
           and support to developers interested in building creative projects
           with ChainSafe Gaming.
         </motion.p>
-        <div>
+        <div  className='z-10'>
           <Button href={formUrl} type='primary'>
             Submit Application
           </Button>
