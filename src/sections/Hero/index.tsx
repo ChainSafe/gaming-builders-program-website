@@ -21,7 +21,7 @@ export default function Hero() {
         <motion.p
           variants={fadeInVariant}
           className='text-lg text-gray-300 max-w-2xl pb-8 mt-4'>
-          The ChainSafe Gaming Builder&apos;s Program offers funding, guidance,
+          The ChainSafe Gaming Builders&apos; Program offers funding, guidance,
           and support to developers interested in building creative projects
           with ChainSafe Gaming.
         </motion.p>

@@ -55,16 +55,29 @@ const RootLayout = ({ children }:any) => {
           name='twitter:image'
           content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/d54df2fc-0b20-4f10-29f1-a95d424f9a00/public'
         />
-        {/* <script
+        <script
           defer
           data-domain='builders.gaming.chainsafe.io'
-          src='https://plausible.io/js/script.outbound-links.js'></script> */}
+          src='https://plausible.io/js/script.outbound-links.js'></script>
         <script
           type='text/javascript'
           id='hs-script-loader'
           async
           defer
           src='//js.hs-scripts.com/7667626.js'></script>
+        <script
+          type='text/javascript'
+          id='hs-script-loader'
+          async
+          defer
+          src='https://static.ads-twitter.com/uwt.js'></script>
+          <script id='twitter-conversion-tracker'>
+          {`!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+            a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))}
+          (window,document,'script');
+          twq('config','ogqfs')`}
+          </script>
+
       </Head>
       <Navbar />
       <main>{children}</main>

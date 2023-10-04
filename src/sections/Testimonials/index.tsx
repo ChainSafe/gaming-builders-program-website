@@ -32,8 +32,8 @@ export default function Testimonials() {
           viewport={{ amount: 0.5, once: true}} className='py-6 grid grid-cols-1  md:gap-x-4 gap-y-4 sm:gap-y-6 md:grid-cols-3'>
           {testimonialData.map((card) => (
             <motion.div variants={childVariants} key={card.from} className='flex flex-col border border-solid border-gray-800 rounded-xl px-6 py-8'>
-              <p className='text-lg text-gray-200'>{card.entry}</p>
-              <p className='text-lg text-gray-400 my-2'>- <em>{card.from}</em></p>
+              <p className='text-lg text-gray-300'>{card.entry}</p>
+              <p className='text-lg text-brand-400 my-2'>- <em>{card.from}</em></p>
             </motion.div>
           ))}
       </motion.div>

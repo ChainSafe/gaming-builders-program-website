@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+"use strict"
 import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { List, X } from '@phosphor-icons/react';
@@ -10,7 +12,6 @@ import {
   resourcesOptions,
 } from "@/data/navbar";
 import Button from '../Button/ExternalButton';
-import Image from 'next/image';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,8 +22,8 @@ export default function Navbar() {
         aria-label="Global"
       >
         <Link href="/" className="flex lg:flex-1">
-          <Image className='w-auto max-h-24' height={32} width={48}  src="/logo.png" alt="ChainSafe Gaming" />
-        </Link>
+          <img className='w-[120px] max-h-24' src="/logo.png" alt="ChainSafe Gaming" />
+        </Link>                           
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -33,7 +34,7 @@ export default function Navbar() {
             <List className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        {/* navbar  */}
+        {/* navbar ld */}
         <div className="hidden lg:flex lg:gap-x-12">
           <FlyoutMenuItem
             name="Product"
@@ -66,7 +67,7 @@ export default function Navbar() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
-              <Image className="w-auto" src="/logo.png" alt="ChainSafe Gaming web3.unity" height={64} width={100} />
+              <img className="w-[100px]" src="/logo.png" alt="ChainSafe Gaming web3.unity"  />
             </Link>
             <button
               type="button"

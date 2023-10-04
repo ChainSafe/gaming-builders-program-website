@@ -8,7 +8,6 @@ export const fadeInVariant: Variants = {
     opacity: 1,
     transition: {
       duration: 1.1,
-      delay: 0.15,
     },
   },
 };
@@ -20,9 +19,9 @@ export const parentVariant:Variants = {
   onscreen: {
     opacity: 1,
     transition: {
-      delayChildren: 0.2,
+      delayChildren: 0.1,
       ease: [0.32, 0.23, 0.4, 0.9],
-      staggerChildren: 0.25,
+      staggerChildren: 0.2,
     },
   },
 };

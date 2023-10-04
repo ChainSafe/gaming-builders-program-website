@@ -25,6 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         'green-bg': "url('/bg/hero2.png')",
+        'jade-bg': "url('/bg/bg-2.png')",
       },
     },
   },

@@ -3,12 +3,12 @@ import { Plus, Minus } from '@phosphor-icons/react';
 
 const faqs = [
   {
-    question: "What is ChainSafe's Builders Program?",
+    question: "What is ChainSafe's Builder\' Program?",
     answer:
-      'The ChainSafe Builders Program is an initiative designed to provide funding, guidance, and support to developers who want to create innovative projects using ChainSafe Gaming.',
+      'The ChainSafe Builders\' Program is an initiative designed to provide funding, guidance, and support to developers who want to create innovative projects using ChainSafe Gaming.',
   },
   {
-    question: 'Who is eligible to apply for the Builders Program?',
+    question: 'Who is eligible to apply for the Builders\' Program?',
     answer:
       'Developers, both individuals and teams, are eligible to apply for the program. We welcome creators from various backgrounds and experience levels.',
   },
@@ -29,7 +29,7 @@ const faqs = [
       'We offer a variety of resources, including mentorship, technical guidance, access to our network of experts, and help with project planning and execution. Our goal is to ensure you have the tools and knowledge to succeed.',
   },
   {
-    question: 'Is there a timeline for the Builders Program?',
+    question: 'Is there a timeline for the Builders\' Program?',
     answer:
       'The program typically operates on a cohort basis, with specific start and end dates for each cohort. Be sure to check our website or announcements for the latest information on application deadlines and program timelines.',
   },
@@ -40,7 +40,7 @@ const faqs = [
       "We expect participants to actively work on and make progress with their projects, engage with mentors and the ChainSafe community, and keep us updated on their project's status. Regular communication and collaboration are key.",
   },
   {
-    question: 'How can I apply for the ChainSafe Builders Program?',
+    question: 'How can I apply for the ChainSafe Builders\' Program?',
     answer:
       'To apply, visit our website and look for the application form during the open application period. Follow the provided instructions to submit your project proposal.',
   },
@@ -48,7 +48,7 @@ const faqs = [
     question:
       'Is there any equity or ownership taken by ChainSafe in the projects developed through the program?',
     answer:
-      'No, we do not take ownership or equity in the projects developed by participants in the Builders Program. We are here to support your vision and help you succeed.',
+      'No, we do not take ownership or equity in the projects developed by participants in the Builders\' Program. We are here to support your vision and help you succeed.',
   },
   {
     question: 'What happens after my project is completed?',
@@ -71,21 +71,21 @@ export default function FAQ() {
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className='flex w-full items-start justify-between text-left text-white'>
+                      <Disclosure.Button className='flex w-full items-start justify-between text-left text-gray-200'>
                         <span className='text-xl leading-6'>
                           {faq.question}
                         </span>
                         <span className='ml-6 flex h-7 items-center'>
                           {open ? (
-                            <Minus className='h-6 w-6' aria-hidden='true' />
+                            <Minus className='h-6 w-6 text-gray-600' aria-hidden='true' />
                           ) : (
-                            <Plus className='h-6 w-6' aria-hidden='true' />
+                            <Plus className='h-6 w-6 text-brand-400' aria-hidden='true' />
                           )}
                         </span>
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as='dd' className='mt-2 pr-12'>
-                      <p className='text-lg leading-7 text-gray-300'>
+                      <p className='text-lg leading-7 text-gray-400'>
                         {faq.answer}
                       </p>
                     </Disclosure.Panel>
