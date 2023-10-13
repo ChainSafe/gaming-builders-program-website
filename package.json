@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aaronhayes/react-use-hubspot-form": "^2.1.1",
     "@headlessui/react": "^1.7.17",
     "@phosphor-icons/react": "^2.0.10",
     "@types/node": "20.5.4",

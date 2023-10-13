@@ -3,9 +3,9 @@ import { Plus, Minus } from '@phosphor-icons/react';
 
 const faqs = [
   {
-    question: "What is ChainSafe's Builder\' Program?",
+    question: "What is ChainSafe's Builder\'s Program?",
     answer:
-      'The ChainSafe Builders\' Program is an initiative designed to provide funding, guidance, and support to developers who want to create innovative projects using ChainSafe Gaming.',
+      'The ChainSafe Builder\'s Program is an initiative designed to provide funding, guidance, and support to developers who want to create innovative projects using ChainSafe Gaming.',
   },
   {
     question: 'Who is eligible to apply for the Builders\' Program?',
@@ -29,7 +29,7 @@ const faqs = [
       'We offer a variety of resources, including mentorship, technical guidance, access to our network of experts, and help with project planning and execution. Our goal is to ensure you have the tools and knowledge to succeed.',
   },
   {
-    question: 'Is there a timeline for the Builders\' Program?',
+    question: 'Is there a timeline for the Builder\'s Program?',
     answer:
       'The program typically operates on a cohort basis, with specific start and end dates for each cohort. Be sure to check our website or announcements for the latest information on application deadlines and program timelines.',
   },
@@ -40,7 +40,7 @@ const faqs = [
       "We expect participants to actively work on and make progress with their projects, engage with mentors and the ChainSafe community, and keep us updated on their project's status. Regular communication and collaboration are key.",
   },
   {
-    question: 'How can I apply for the ChainSafe Builders\' Program?',
+    question: 'How can I apply for the ChainSafe Builder\'s Program?',
     answer:
       'To apply, visit our website and look for the application form during the open application period. Follow the provided instructions to submit your project proposal.',
   },
@@ -48,7 +48,7 @@ const faqs = [
     question:
       'Is there any equity or ownership taken by ChainSafe in the projects developed through the program?',
     answer:
-      'No, we do not take ownership or equity in the projects developed by participants in the Builders\' Program. We are here to support your vision and help you succeed.',
+      'No, we do not take ownership or equity in the projects developed by participants in the Builder\'s Program. We are here to support your vision and help you succeed.',
   },
   {
     question: 'What happens after my project is completed?',

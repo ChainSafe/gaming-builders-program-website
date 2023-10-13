@@ -7,10 +7,12 @@ import CTA from '@/sections/CTA';
 import Testimonials from '@/sections/Testimonials';
 import Offer from '@/sections/Offer';
 import FAQ from '@/sections/FAQ';
+import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
+import CTA2 from '@/sections/CTA2';
 
 export default function Home() {
   return (
-    <>
+    <HubspotProvider>
       <Hero />
       <Offer />
       <Why />
@@ -18,7 +20,7 @@ export default function Home() {
       <WhatWeLookFor />
       <FAQ />
       <Testimonials />
-      <CTA />
-    </>
+      <CTA2 />
+    </HubspotProvider>
   );
 }
