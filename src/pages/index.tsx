@@ -20,7 +20,7 @@ export default function Home() {
       <WhatWeLookFor />
       <FAQ />
       <Testimonials />
-      <CTA />
+      <CTA2 />
     </HubspotProvider>
   );
 }
